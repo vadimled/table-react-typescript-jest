@@ -1,0 +1,71 @@
+@import "../src/css/Colors.scss";
+
+.App :global {
+  .App-header {
+    padding: 10px;
+    background-color: $header-background;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    .header-details{
+      width: 980px;
+      padding: 0 40px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .details-btn{
+      font-size: 0.6em;
+      color: $green-100;
+    }
+
+  }
+  .add-new-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    margin-left: 30px;
+  }
+  .ant-input-search.ant-input-affix-wrapper {
+    //display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    .ant-input {
+      width: 100% !important;
+      font-size: 16px;
+    }
+    .ant-input-suffix i {
+      color: #96a2aa;
+      display: flex;
+      right: 4px;
+      top: -5px;
+      position: absolute;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .App-header {
+      font-size: 14px;
+      .header-details{
+        flex-direction: column;
+      }
+      .search-item-wrapper{
+        margin-top: 10px;
+      }
+    }
+  }
+}

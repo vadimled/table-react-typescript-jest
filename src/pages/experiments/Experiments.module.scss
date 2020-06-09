@@ -1,0 +1,13 @@
+@import "./src/css/Colors";
+
+.experiments-page-content :global {
+  padding: 20px;
+
+  li {
+    list-style-type: none;
+  }
+
+  .details-btn{
+    color: $green-100;
+  }
+}

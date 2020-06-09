@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExperimentName matches default ExperimentName snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <span
+      class="ant-input-affix-wrapper"
+    >
+      <input
+        class="ant-input"
+        data-testid="input-name-component"
+        placeholder="Edit name"
+        type="text"
+        value="name"
+      />
+      <span
+        class="ant-input-suffix"
+      >
+        <reactcomponent
+          class="delete-icon"
+        />
+      </span>
+    </span>
+    <div
+      data-testid="custom-icon"
+    >
+      <div
+        class="current-icon"
+        data-testid="target-icon"
+      >
+        <reactcomponent />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

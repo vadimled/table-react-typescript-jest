@@ -1,0 +1,33 @@
+@import './src/css/Colors';
+
+.experiment-wrapper :global {
+  font-size: 18px;
+  color: $green-100;
+  text-transform: uppercase;
+  text-align: center;
+  background: $table-background;
+  -webkit-box-shadow: $tbody-shadow;
+  -moz-box-shadow: $tbody-shadow;
+  box-shadow: $tbody-shadow;
+  padding: 40px 40px;
+  height: 126px;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .experiments-id{
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    color: $table-font-200;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  padding: 20px 20px;
+  min-height: 100px;
+}

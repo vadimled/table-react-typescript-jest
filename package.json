@@ -1,0 +1,65 @@
+{
+  "name": "vadim_malckin_react_typescript",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "5.8.0",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "10.3.5",
+    "@types/classnames": "^2.2.10",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.5",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "antd": "4.1.3",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "concurrently": "^5.2.0",
+    "csstype": "^2.6.10",
+    "json-server": "^0.16.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "1.1.3",
+    "reselect": "^4.0.0",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.9.3"
+  },
+  "devDependencies": {
+    "create-react-component-folder": "^0.2.6",
+    "identity-obj-proxy": "^3.0.0",
+    "redux-devtools": "^3.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --updateSnapshot",
+    "test-dev": "jest --updateSnapshot --watch",
+    "eject": "react-scripts eject",
+    "server": "json-server db.json --port 3001",
+    "dev": "concurrently \"json-server db.json --port 3001\" \"react-scripts start\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

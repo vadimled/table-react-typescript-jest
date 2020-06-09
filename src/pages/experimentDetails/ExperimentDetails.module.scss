@@ -1,0 +1,48 @@
+@import './src/css/Colors';
+
+.experiment-details-wrapper :global{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0 130px 0;
+
+  .inner-wrapper{
+    min-width: 450px;
+    margin-right: 16px;
+  }
+
+  h3{
+    font-size: calc(2px + 2vmin);
+    color: $white;
+  }
+
+  .detail-item-wrapper{
+    background-color: $table-background;
+    font-size: 18px;
+    color: $table-font;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 460px;
+    -webkit-box-shadow: 5px 6px 7px -3px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 5px 6px 7px -3px rgba(0, 0, 0, 0.23);
+    box-shadow: 5px 6px 7px -3px rgba(0, 0, 0, 0.23);
+  }
+
+  .detail-item{
+    background-color: $background;
+    font-size: 18px;
+    color: $table-font;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 460px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .inner-wrapper{
+      min-width: 330px;
+    }
+  }
+
+}

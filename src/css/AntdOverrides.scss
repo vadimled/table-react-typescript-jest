@@ -1,0 +1,153 @@
+@import "./Colors";
+
+// ant-table
+.ant-table {
+  font-size: 16px !important;
+
+  .ant-table-thead {
+    tr {
+      background-color: $black;
+
+      th {
+        background-color: $header-background !important;
+        color: $green-100;
+        border-color: $header-bottom-border;
+      }
+    }
+
+    .ant-table-selection-column {
+      position: relative;
+
+      .ant-table-header-column {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    background-color: $table-background;
+    color: $table-font;
+    -webkit-box-shadow: $tbody-shadow;
+    -moz-box-shadow: $tbody-shadow;
+    box-shadow: $tbody-shadow;
+
+    tr {
+      td {
+        height: 40px;
+        padding: 10px 15px;
+        border-color: $border_color;
+        background-color: $table-background;
+
+        &.ant-table-selection-column {
+          position: relative;
+
+          & > span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        &.selection-cell {
+          padding: 0;
+          position: relative;
+
+          .ant-checkbox-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+
+    .ant-table-row {
+      &:hover {
+        td {
+          background-color: $table-background-hover;
+        }
+      }
+    }
+
+    .ant-table-row-hover {
+      td {
+        background-color: $table-background-hover !important;
+      }
+    }
+  }
+}
+
+.ant-input-affix-wrapper {
+  width: 199px;
+  padding: 1px 11px 0;
+}
+
+.ant-input-suffix {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.anticon.anticon-caret-down.ant-table-column-sorter-down.active,
+.anticon.anticon-caret-up.ant-table-column-sorter-up.active,{
+  svg path {
+    fill: $header-bottom-border;
+  }
+}
+
+// PAGINATION
+.ant-pagination {
+  margin-top: 50px;
+  float: left !important;
+
+  .ant-pagination-prev a:hover,
+  .ant-pagination-next a:hover {
+    color: $green-100;
+  }
+
+  .ant-pagination-prev a[disabled],
+  .ant-pagination-next a[disabled], {
+    border-color: #424242 !important;
+  }
+
+  .ant-pagination-item {
+    border-color: $green-100;
+
+    a {
+      color: $green-100;
+    }
+
+    &.ant-pagination-item-active {
+      background-color: $green-900;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .ant-pagination-item-link {
+    background-color: #424242;
+    border-color: $green-800;
+
+    svg path {
+      &:hover {
+        fill: $green-100;
+      }
+    }
+
+    &:hover {
+      border-color: $green-100 !important;
+    }
+
+  }
+}
+
+.ant-input-suffix {
+  display: flex;
+}

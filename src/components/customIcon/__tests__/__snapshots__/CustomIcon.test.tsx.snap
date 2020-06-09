@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomIcon snapshot of component view if 'disabled===false && loading===false'  1`] = `
+<DocumentFragment>
+  <div
+    data-testid="custom-icon"
+  >
+    <div
+      class="current-icon"
+      data-testid="target-icon"
+    >
+      <reactcomponent />
+    </div>
+  </div>
+</DocumentFragment>
+`;

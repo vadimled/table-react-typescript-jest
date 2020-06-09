@@ -1,0 +1,11 @@
+@import "./src/css/Colors";
+
+.detail-item-wrapper :global{
+  background: $background;
+  font-size: 18px;
+  color: $table-font;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 5px;
+  max-width: 460px;
+}

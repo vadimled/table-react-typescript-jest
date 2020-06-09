@@ -1,0 +1,21 @@
+@import "./src/css/Colors.scss";
+
+.experiment-name-wrapper :global {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background-color: $table-name-background;
+
+  .show-name-field {
+    flex-grow: 1;
+    display: block;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 220px;
+  }
+ }
